@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+}
+
+.top-nav li {
+    padding: 0 15px;
+    list-style: none;
+    line-height: 40px;
+    background-color: #333;
+}
+
+.top-nav li:hover {
+    background-color: rgb(165, 157, 146);
+}
+
+.top-nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.all-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    width: 23%;
+    height: 1000px;
+    background-color: yellow;
+}
+
+.font-size {
+    font-weight: bold;
+    font-size: 50px;
+    margin: 30px auto 0;
+}
+
+
+.all-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all-image .column-image {
+    max-width: 25%;
+    padding: 0 5px;
+}
+
+.all-image .column-image img {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid red;
+}
+
+
+.banner-web{
+    background-color: aqua;
+    padding: 60px;
+    text-align: center;
+}
+.banner-web .title{
+    font-weight: bold;
+    font-size: 30px;
+}
+.banner-web .sub-title{
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-web-left{
+    width: 30%;
+    padding: 5px;
+}
+.about{
+    margin: 5px 0 0 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.content-web-left img{
+    width: 100%;
+    height: 100px;
+    margin: 5px 0;
+}
+
+.pt{
+    margin: 5px 0 0 10px;
+    font-size: 18px;
+}
+.content-web-right{
+    width: 60%;
+    padding: 5px;
+}
+.all-content-web{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-image{
+    width: 100%;
+    height: 200px;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 992px) {
+    .column {
+        width: 45%;
+    }
+
+    .font-size {
+        font-size: 30px;
+    }
+
+    .all-image .column-image {
+        max-width: 50%;
+    }
+    .content-web-left{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top-nav {
+        display: block;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .font-size {
+        font-size: 20px;
+    }
+
+    .all-image .column-image {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .font-size {
+        font-size: 10px;
+    }
+}
